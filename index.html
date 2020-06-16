@@ -18,9 +18,30 @@
         grid-area: 4/3/4/4;
         text-align: left;
     }
+
+    .item6 {
+        grid-area: 5/4/5/5;
+    }
+
+    .item7 {
+        grid-area: 5/1/5/2;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: lightgray;
+    }
+
+    li {
+        display: inline;
+    }
+
     .container {
         display: grid;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-content: center;
         background: white;
         min-height: 300px;
         width: 100%;
@@ -29,9 +50,9 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
         grid-template-areas {
-            "header header header"
-            "content content content"
-            "footer footer footer";
+            "header header header header"
+            "content content content content"
+            "nav nav nav nav";
         }
     }
 </style>
@@ -48,19 +69,32 @@
     <div class="item2"><button type="Submit" style= "height: 50px; width: 175px; font-size: 16px;">Google Search</button></div>
     <div class="item3"><form><input type="text" size="100"></form></div>
     <div class="item4"><button type="Lucky" style= "height: 50px; width: 175px; font-size: 16px;">I'm Feeling Lucky</button></div>
-    <div class="item5"></div>
-    <div class="item6"></div>
-    <div class="item7"></div>
-    <div class="item8"></div>
-    <div class="item9"></div>
-    <div class="item10"></div>
-    <div class="item11"></div>
-    <div class="item12"></div>
-    <div class="item13"></div>
-    <div class="item14"></div>
-    <div class="item15"></div>
-    <div class="item16"></div>
+    <div class="item5">About Store</div>
+    <div class="item6">    
+        <ul>
+            <li><a href="#Privacy">Privacy</a></li>
+            <li><a href="#Terms">Terms</a></li>
+            <li><a href="#Settings">Settings</a></li>
+        </ul></div>
+    <div class="item7">
+        <ul>
+            <li><a href="#Advertising">Advertising</a></li>
+            <li><a href="#Business">Business</a></li>
+            <li><a href="#HowSearchWorks">How Search Works</a></li>
+        </ul></div>
+    <div class="item8">8</div>
+    <div class="item9">9</div>
+    <div class="item10">10</div>
+    <div class="item11">11</div>
+    <div class="item12">12</div>
+    <div class="item13">13</div>
+    <div class="item14">14</div>
+    <div class="item15">15</div>
+    <div class="item16">16</div>
     </div>
     
+
+
+
 </body>
 </main>
