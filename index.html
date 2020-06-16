@@ -1,12 +1,36 @@
 <style>
-    .d1 {
-        background: blue;
+    .item1 {
+        grid-area: 2/2/3/4;
+        text-align: center;
+    }
+
+    .item3 {
+        grid-area: 3/2/4/4;
+        text-align: center;
+    }
+
+    .item2 {
+        grid-area: 4/2/4/3;
+        text-align: right;
+    }
+
+    .item4 {
+        grid-area: 4/3/4/4;
+        text-align: left;
     }
     .container {
         display: grid;
+        justify-content: space-evenly;
+        background: white;
+        min-height: 300px;
+        width: 100%;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
         grid-template-areas {
             "header header header"
-            ". content . "
+            "content content content"
             "footer footer footer";
         }
     }
@@ -17,22 +41,29 @@
     <title>Google Homepage</title>
 
 <body>
-    <h1>Google Homepage</h1>
+    <h1></h1>
     <div class="container">
-    <div class="d1">1</div>
-    <div class="d2">2</div>
-    <div class="d3">3</div>
-    <div class="d4">4</div>
-    <div class="d5">5</div>
-    <div class="d6">6</div>
+    <div class="item1"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Standard Google logo"></div>
+    <div class="item2"><button type="Submit" style= "height: 50px; width: 175px; font-size: 16px;">Google Search</button></div>
+    <div class="item3"><form><input type="text" size="100"></form></div>
+    <div class="item4"><button type="Lucky" style= "height: 50px; width: 175px; font-size: 16px;">I'm Feeling Lucky</button></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
+    <div class="item8"></div>
+    <div class="item9"></div>
+    <div class="item10"></div>
+    <div class="item11"></div>
+    <div class="item12"></div>
+    <div class="item13"></div>
+    <div class="item14"></div>
+    <div class="item15"></div>
+    <div class="item16"></div>
     </div>
 
-
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-    alt="Standard Google logo">
-    <form action="/Try searching for"><input type="text" placeholder="Try searching something">
-    </form>
-    <button type="Submit">Google Search</button>
-    <button type="Lucky">I'm Feeling Lucky</button>
+    
+    <!-- <button type="Submit">Google Search</button>
+    <button type="Lucky">I'm Feeling Lucky</button> -->
 </body>
 </main>
